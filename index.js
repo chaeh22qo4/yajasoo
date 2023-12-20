@@ -5,12 +5,14 @@ function onSubmit(event) {
     var id = document.getElementById('id').value;
     var attendance = document.getElementById('attendance').checked ? '출석' : '결석';
     var currentTime = new Date(); // 현재 시간을 얻어옴
+    var memo = document.getElementById('memo').value;
 
     var user = {
         name: name,
         id: id,
         attendance: attendance,
-        time: currentTime.toLocaleTimeString() // 현재 시간을 문자열로 저장
+        time: currentTime.toLocaleTimeString(), // 현재 시간을 문자열로 저장
+        memo: memo
     };
 
     var users = JSON.parse(localStorage.getItem('user_info')) || [];
@@ -32,7 +34,7 @@ if (outputDiv) {
     var users = JSON.parse(localStorage.getItem('user_info')) || [];
     users.forEach(function(user) {
         var paragraph = document.createElement('p');
-        paragraph.innerText = user.time + " | " + user.id + " " + user.name + " | " + user.attendance
+        paragraph.innerText = user.time + " | " + user.id + " " + user.name + " | " + user.attendance + " | " + user.memo
         outputDiv.appendChild(paragraph);
     });
 }
