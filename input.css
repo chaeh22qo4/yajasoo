@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'KNUTRUTHTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.indexbtn {
+    background-color: rgb(65, 210, 128);
+    width: 100px;
+    height: 50px;
+    font-family: 'KNUTRUTHTTF';
+    font-size: 14pt;
+    font-weight:bold;
+    
+}
+body {
+    text-align: center;
+    font-family: 'KNUTRUTHTTF';
+}
+h1 {
+    font-size: 35pt;
+    font-style: bold;
+}
