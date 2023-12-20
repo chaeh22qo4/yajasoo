@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>야자수 정보 입력</title>
+    <link rel="stylesheet" type="text/css" href="input.css" />
+
+</head>
+<body>
+    <h1>야자수</h1>
+    <form onsubmit="onSubmit(event)">
+        <p>
+            <label for="name">이름: </label>
+            <input type="text" id="name" placeholder="홍길동" required>
+        </p>
+        <p>
+            <label for="id">학번: </label>
+            <input type="text" id="id" placeholder="ex.1908" required>
+        </p>
+        <p>
+            <label for="attendance"></label>
+            <input type="radio" id="attendance" name="attendance" value="출석" required> 출석
+            <input type="radio" id="attendance" name="attendance" value="결석" required> 결석
+        </p>
+        <p>
+        <button type="submit" class="indexbtn">확인</button>
+        </p>
+    </form>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
